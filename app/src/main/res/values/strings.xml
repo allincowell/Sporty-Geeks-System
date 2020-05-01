@@ -6,4 +6,9 @@
     <string name="enter_password">Enter Password</string>
     <string name="log_in">Log in</string>
     <string name="need_a_new_account">Need a new Account?</string>
+    <string name="logout">Logout</string>
+    <string name="create_a_new_account">Create a new Account</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_an_account">Already have an Account?</string>
 </resources>

@@ -33,10 +33,19 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        email = (EditText) findViewById(R.id.email);
-        password = (EditText) findViewById(R.id.password);
-        loginbtn = (Button) findViewById(R.id.loginbtn);
+        email = (EditText) findViewById(R.id.email_register);
+        password = (EditText) findViewById(R.id.password_register);
+        loginbtn = (Button) findViewById(R.id.loginbtn_register);
         logRegbtn = (Button) findViewById(R.id.logRegbtn);
+
+        logRegbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent reg = new Intent(LoginActivity.this, Registration.class);
+                startActivity(reg);
+            }
+        });
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +54,8 @@ public class LoginActivity extends AppCompatActivity {
                 String Password = password.getText().toString();
 
                 if(!TextUtils.isEmpty(Email) && !TextUtils.isEmpty(Password)){
+
+
 
                     mAuth.signInWithEmailAndPassword(Email, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override

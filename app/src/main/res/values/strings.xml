@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Final App</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="sports_app">Sports App</string>
+    <string name="enter_email_id">Enter email id</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="log_in">Log in</string>
+    <string name="need_a_new_account">Need a new Account?</string>
+</resources>

@@ -11,4 +11,11 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="create_account">Create Account</string>
     <string name="already_have_an_account">Already have an Account?</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="enter_you_name">Enter you name</string>
+    <string name="enter_your_hall_of_residence">Enter your hall of residence</string>
+    <string name="save_account_settings">Save Account Settings</string>
+    <string name="sports_posts">Sports\' Posts</string>
+    <string name="er1">Enter your Hall of Residence</string>
+    <string name="r2">Enter your name</string>
 </resources>

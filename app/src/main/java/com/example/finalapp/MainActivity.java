@@ -13,6 +13,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
 
     private Button logoutbtn;
+    private Button settingsbtn;
     FirebaseAuth mAuth;
 
     @Override
@@ -22,6 +23,17 @@ public class MainActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         logoutbtn = (Button) findViewById(R.id.logoutbtn);
+        settingsbtn = (Button) findViewById(R.id.settings_mainbtn);
+
+        settingsbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent settings = new Intent(MainActivity.this, SetupActivity.class);
+                startActivity(settings);
+                finish();
+            }
+        });
 
         logoutbtn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -18,4 +18,7 @@
     <string name="sports_posts">Sports\' Posts</string>
     <string name="er1">Enter your Hall of Residence</string>
     <string name="r2">Enter your name</string>
+    <string name="click_on_star_to_select_an_image">click on star to select an image</string>
+    <string name="profile_pic">Profile pic</string>
+    <string name="hi">\"Error: \"</string>
 </resources>

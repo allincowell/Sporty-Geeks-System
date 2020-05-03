@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background">
 
     <TextView
         android:id="@+id/nameTextView"
@@ -9,14 +11,16 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
+        android:background="@color/cardview_light_background"
         android:padding="8dp"
         android:paddingLeft="8dp"
         android:paddingTop="8dp"
         android:paddingRight="8dp"
         android:paddingBottom="8dp"
         android:text="@string/z"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
 
     <TextView
         android:id="@+id/descTextView"
@@ -25,11 +29,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="80dp"
+        android:background="#FDFDFC"
         android:padding="8dp"
         android:paddingLeft="8dp"
         android:paddingTop="8dp"
         android:paddingRight="8dp"
         android:paddingBottom="8dp"
         android:text="@string/x"
-        android:textSize="18sp" />
+        android:textColor="?android:attr/colorForeground"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 </RelativeLayout>

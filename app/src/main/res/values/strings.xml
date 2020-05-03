@@ -35,4 +35,7 @@
     <string name="textview3">TextView</string>
     <string name="g">Username</string>
     <string name="describe">Describe</string>
+    <string name="z">Sport\'s name</string>
+    <string name="x">Description here</string>
+    <string name="l">View Posts</string>
 </resources>

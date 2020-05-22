@@ -30,6 +30,9 @@ public class PostActivity extends AppCompatActivity {
     private Button postbtn;
     private EditText sport;
     private EditText desc;
+    private EditText date_post;
+    private EditText time_post;
+    private EditText venue_post;
 
 
     private FirebaseFirestore firebaseFirestore;
@@ -45,6 +48,9 @@ public class PostActivity extends AppCompatActivity {
         postbtn = (Button) findViewById(R.id.postblogbtn);
         sport = (EditText) findViewById(R.id.sport);
         desc = (EditText) findViewById(R.id.desc);
+        date_post = (EditText) findViewById(R.id.date_post);
+        time_post = (EditText) findViewById(R.id.time_post);
+        venue_post = (EditText) findViewById(R.id.venue_post);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseFirestore = FirebaseFirestore.getInstance();
@@ -55,8 +61,11 @@ public class PostActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String Desc = desc.getText().toString();
                 String Sport = sport.getText().toString();
+                String Date = date_post.getText().toString();
+                String Time = time_post.getText().toString();
+                String Venue = venue_post.getText().toString();
 
-                if(!TextUtils.isEmpty(Desc) && !TextUtils.isEmpty(Sport)){
+                if(!TextUtils.isEmpty(Desc) && !TextUtils.isEmpty(Sport) && !TextUtils.isEmpty(Date) && !TextUtils.isEmpty(Time) && !TextUtils.isEmpty(Venue)){
 
                     final String random = UUID.randomUUID().toString();
 
@@ -64,6 +73,9 @@ public class PostActivity extends AppCompatActivity {
                     m.put("desc", Desc);
                     m.put("sport", Sport);
                     m.put("timestamp", random);
+                    m.put("date", Date);
+                    m.put("time", Time);
+                    m.put("venue", Venue);
 
                     firebaseFirestore.collection("Posts").add(m).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
                         @Override

@@ -8,7 +8,7 @@
         android:id="@+id/nameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_alignParentTop="true"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
         android:background="@color/cardview_light_background"
@@ -20,15 +20,17 @@
         android:text="@string/z"
         android:textColor="@color/colorAccent"
         android:textSize="30sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold|italic"
+        android:layout_marginStart="16dp" />
 
     <TextView
         android:id="@+id/descTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTextView"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="93dp"
         android:background="#FDFDFC"
         android:padding="8dp"
         android:paddingLeft="8dp"
@@ -39,4 +41,52 @@
         android:textColor="?android:attr/colorForeground"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="82dp"
+        android:padding="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/date"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="82dp"
+        android:padding="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/time"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="14sp"
+        android:layout_marginStart="125dp" />
+
+    <TextView
+        android:id="@+id/venueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="125dp"
+        android:padding="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/venue"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp" />
 </RelativeLayout>

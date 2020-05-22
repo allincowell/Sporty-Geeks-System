@@ -35,9 +35,15 @@ public class MainActivity extends AppCompatActivity {
 
     List<String> sports_list;
     List<String> desc_list;
+    List<String> date_list;
+    List<String> time_list;
+    List<String> venue_list;
 
     String[] sports;
     String[] descriptions;
+    String[] dates;
+    String[] times;
+    String[] venues;
 
     ListView myListView;
 
@@ -56,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
 
         sports_list = new ArrayList<String>();
         desc_list = new ArrayList<String>();
+        date_list = new ArrayList<String>();
+        time_list = new ArrayList<String>();
+        venue_list = new ArrayList<String>();
         myListView = (ListView) findViewById(R.id.myListView);
 
 
@@ -75,6 +84,12 @@ public class MainActivity extends AppCompatActivity {
                                     desc_list.add(doc.getString("desc"));
                                 if(doc.get("sport") != null)
                                     sports_list.add(doc.getString("sport"));
+                                if(doc.get("date") != null)
+                                    date_list.add(doc.getString("date"));
+                                if(doc.get("time") != null)
+                                    time_list.add(doc.getString("time"));
+                                if(doc.get("venue") != null)
+                                    venue_list.add(doc.getString("venue"));
                             }
 
                         }else{
@@ -86,8 +101,11 @@ public class MainActivity extends AppCompatActivity {
 
                 sports = sports_list.toArray(new String[0]);
                 descriptions = desc_list.toArray(new String[0]);
+                dates = date_list.toArray(new String[0]);
+                times = time_list.toArray(new String[0]);
+                venues = venue_list.toArray(new String[0]);
 
-                ItemAdapter itemAdapter = new ItemAdapter(MainActivity.this, sports, descriptions);
+                ItemAdapter itemAdapter = new ItemAdapter(MainActivity.this, sports, descriptions, dates, times, venues);
                 myListView.setAdapter(itemAdapter);
 
             }

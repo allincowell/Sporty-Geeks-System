@@ -38,4 +38,11 @@
     <string name="z">Sport\'s name</string>
     <string name="x">Description here</string>
     <string name="l">View Posts</string>
+    <string name="any_other_details">Any other details ...</string>
+    <string name="enter_the_time">Enter the Time</string>
+    <string name="enter_the_venue">Enter the Venue</string>
+    <string name="enter_the_date">Enter the Date</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="venue">Venue</string>
 </resources>

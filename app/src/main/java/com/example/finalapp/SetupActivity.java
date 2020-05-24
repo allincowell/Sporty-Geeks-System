@@ -42,6 +42,7 @@ public class SetupActivity extends AppCompatActivity {
 
     private EditText name;
     private EditText hall;
+    private EditText mobileEditText;
     private Button savebtn;
     private String user_id;
 
@@ -57,6 +58,7 @@ public class SetupActivity extends AppCompatActivity {
 
         name = (EditText) findViewById(R.id.nameSetup);
         hall = (EditText) findViewById(R.id.hall_setup);
+        mobileEditText = (EditText) findViewById(R.id.mobEditText);
         savebtn = (Button) findViewById(R.id.saveSetupbtn);
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -71,6 +73,7 @@ public class SetupActivity extends AppCompatActivity {
 
                 String user_name = name.getText().toString();
                 String Hall = hall.getText().toString();
+                String Mobile = mobileEditText.getText().toString();
 
                 if(!TextUtils.isEmpty(user_name) && !TextUtils.isEmpty(Hall) ){
 
@@ -80,6 +83,7 @@ public class SetupActivity extends AppCompatActivity {
                     //m.put("userID", user_id);
                     m.put("name", user_name);
                     m.put("hall", Hall);
+                    m.put("mobile", Mobile);
 
                     firebaseFirestore.collection("Users").document(user_id).set(m).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override

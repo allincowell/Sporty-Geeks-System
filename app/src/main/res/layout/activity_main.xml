@@ -96,9 +96,8 @@
 
     <ListView
         android:id="@+id/myListView"
-        android:layout_width="409dp"
-        android:layout_height="503dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="398dp"
+        android:layout_height="535dp"
         android:background="@color/cardview_light_background"
         app:layout_constraintBottom_toTopOf="@+id/homeButton"
         app:layout_constraintEnd_toEndOf="parent"

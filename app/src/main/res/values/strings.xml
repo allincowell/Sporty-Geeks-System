@@ -45,4 +45,8 @@
     <string name="date">Date</string>
     <string name="time">Time</string>
     <string name="venue">Venue</string>
+    <string name="email">Email</string>
+    <string name="email_id">Email ID</string>
+    <string name="host">Host</string>
+    <string name="enter_your_mobile_number">Enter your Mobile Number</string>
 </resources>

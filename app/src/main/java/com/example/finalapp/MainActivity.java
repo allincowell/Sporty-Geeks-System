@@ -31,19 +31,26 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseFirestore firebaseFirestore;
 
-    //private String current_user_id;
 
     List<String> sports_list;
     List<String> desc_list;
     List<String> date_list;
     List<String> time_list;
     List<String> venue_list;
+    List<String> email_list;
+    List<String> name_list;
+    List<String> hall_list;
+    List<String> mobile_list;
 
     String[] sports;
     String[] descriptions;
     String[] dates;
     String[] times;
     String[] venues;
+    String[] emails;
+    String[] names;
+    String[] halls;
+    String[] mobiles;
 
     ListView myListView;
 
@@ -65,9 +72,11 @@ public class MainActivity extends AppCompatActivity {
         date_list = new ArrayList<String>();
         time_list = new ArrayList<String>();
         venue_list = new ArrayList<String>();
+        email_list = new ArrayList<String>();
+        name_list = new ArrayList<String>();
+        hall_list = new ArrayList<String>();
+        mobile_list = new ArrayList<String>();
         myListView = (ListView) findViewById(R.id.myListView);
-
-
 
 
         homeButton.setOnClickListener(new View.OnClickListener() {
@@ -90,6 +99,14 @@ public class MainActivity extends AppCompatActivity {
                                     time_list.add(doc.getString("time"));
                                 if(doc.get("venue") != null)
                                     venue_list.add(doc.getString("venue"));
+                                if(doc.get("email") != null)
+                                    email_list.add(doc.getString("email"));
+                                if(doc.get("name") != null)
+                                    name_list.add(doc.getString("name"));
+                                if(doc.get("hall") != null)
+                                    hall_list.add(doc.getString("hall"));
+                                if(doc.get("mobile") != null)
+                                    mobile_list.add(doc.getString("mobile"));
                             }
 
                         }else{
@@ -99,13 +116,18 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+
                 sports = sports_list.toArray(new String[0]);
                 descriptions = desc_list.toArray(new String[0]);
                 dates = date_list.toArray(new String[0]);
                 times = time_list.toArray(new String[0]);
                 venues = venue_list.toArray(new String[0]);
+                emails = email_list.toArray(new String[0]);
+                names = name_list.toArray(new String[0]);
+                halls = hall_list.toArray(new String[0]);
+                mobiles = mobile_list.toArray(new String[0]);
 
-                ItemAdapter itemAdapter = new ItemAdapter(MainActivity.this, sports, descriptions, dates, times, venues);
+                ItemAdapter itemAdapter = new ItemAdapter(MainActivity.this, sports, descriptions, dates, times, venues, emails, names, halls, mobiles);
                 myListView.setAdapter(itemAdapter);
 
             }

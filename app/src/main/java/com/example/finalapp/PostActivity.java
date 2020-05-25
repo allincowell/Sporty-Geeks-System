@@ -80,7 +80,7 @@ public class PostActivity extends AppCompatActivity {
                 String Hall = hallAgain.getText().toString();
                 String Mobile = mobileAgain.getText().toString();
 
-                if(!TextUtils.isEmpty(Desc) && !TextUtils.isEmpty(Sport) && !TextUtils.isEmpty(Date) && !TextUtils.isEmpty(Time) && !TextUtils.isEmpty(Venue)){
+                if(!TextUtils.isEmpty(Desc) && !TextUtils.isEmpty(Sport) && !TextUtils.isEmpty(Date) && !TextUtils.isEmpty(Time) && !TextUtils.isEmpty(Venue) && !TextUtils.isEmpty(Name) && !TextUtils.isEmpty(Hall) && !TextUtils.isEmpty(Mobile)) {
 
 
                     Map<String, Object> m = new HashMap<>();

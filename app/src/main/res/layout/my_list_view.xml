@@ -110,15 +110,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/hostTextView"
+        android:layout_marginStart="100dp"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="12dp"
         android:fontFamily="sans-serif"
         android:padding="4dp"
         android:text="@string/email_id"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginStart="100dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView5"
@@ -136,14 +136,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/nameTextView"
+        android:layout_marginStart="100dp"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="40dp"
         android:padding="4dp"
         android:text="@string/host"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginStart="100dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView9"
@@ -174,14 +174,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/idTextView"
+        android:layout_marginStart="100dp"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="16dp"
         android:padding="4dp"
         android:text="Hall"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginStart="100dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView12"
@@ -243,7 +243,7 @@
         android:layout_marginTop="16dp"
         android:padding="4dp"
         android:text="Mobile"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="18sp"
         android:textStyle="bold" />
 
